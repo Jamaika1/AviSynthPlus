@@ -62,7 +62,7 @@ extern const AVSFunction Levels_filters[] = {
 };
 
 
-avs_alignas(64) static const BYTE ditherMap[256] = {
+avs_alignas(FRAME_ALIGN) static const BYTE ditherMap[256] = {
 #if 0
   // default 0231 recursed table
   0x00, 0x80, 0x20, 0xA0,  0x08, 0x88, 0x28, 0xA8,  0x02, 0x82, 0x22, 0xA2,  0x0A, 0x8A, 0x2A, 0xAA,
